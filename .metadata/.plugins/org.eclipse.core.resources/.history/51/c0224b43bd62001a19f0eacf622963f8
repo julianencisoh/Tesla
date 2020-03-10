@@ -131,8 +131,7 @@ public void draw() {
     	cp5.get(Button.class,"HomeBoton").show();
 		cp5.get(Button.class,"BuyBoton").show();
 		cp5.get(Button.class,"HistoryBoton").show();
-		cp5.get(Button.class,"BackToTeslaX").show();
-		cp5.get(Button.class,"NextToTeslaY").show();
+		cp5.get(Button.class,"BackToMenu").show();
 		
 		fill(0);
 		textSize(10);
@@ -147,7 +146,6 @@ public void draw() {
 		cp5.get(Button.class,"BuyBoton").show();
 		cp5.get(Button.class,"HistoryBoton").show();
 		cp5.get(Button.class,"BackToTeslaS").show();
-		cp5.get(Button.class,"NexToTeslaX").show();
 		
 		fill(0);
 		textSize(10);
@@ -162,7 +160,6 @@ public void draw() {
 		cp5.get(Button.class,"BuyBoton").show();
 		cp5.get(Button.class,"HistoryBoton").show();
 		cp5.get(Button.class,"BackToTeslaY").show();
-		cp5.get(Button.class,"NexToTeslaS").show();
 		
 		fill(0);
 		textSize(10);
@@ -208,12 +205,9 @@ private void ocultarBotones() {
 	cp5.get(Button.class,"HomeBoton").hide();
 	cp5.get(Button.class,"BuyBoton").hide();
 	cp5.get(Button.class,"HistoryBoton").hide();
-	cp5.get(Button.class,"BackToTeslaX").hide();
+	cp5.get(Button.class,"BackToMenu").hide();
 	cp5.get(Button.class,"BackToTeslaS").hide();
 	cp5.get(Button.class,"BackToTeslaY").hide();
-	cp5.get(Button.class,"NextToTeslaY").hide();
-	cp5.get(Button.class,"NextToTeslaX").hide();
-	cp5.get(Button.class,"NextToTeslaS").hide();
 
 }
 
@@ -392,7 +386,7 @@ public void botones() {
     .setCaptionLabel("") 
     ;
 	
-	cp5.addButton("BackToTeslaX")
+	cp5.addButton("BackToMenu")
     .setPosition(20,24)
     .setSize(37,37)
     .setColorActive(color(150)) 
@@ -412,33 +406,6 @@ public void botones() {
 	
 	cp5.addButton("BackToTeslaY")
     .setPosition(20,24)
-    .setSize(37,37)
-    .setColorActive(color(150)) 
-    .setColorBackground(color(255,255,255,1))
-    .setColorForeground(color(0,0,0,30))
-    .setCaptionLabel("") 
-    ;
-	
-	cp5.addButton("NextToTeslaY")
-    .setPosition(316,23)
-    .setSize(37,37)
-    .setColorActive(color(150)) 
-    .setColorBackground(color(255,255,255,1))
-    .setColorForeground(color(0,0,0,30))
-    .setCaptionLabel("") 
-    ;
-	
-	cp5.addButton("NextToTeslaX")
-    .setPosition(316,23)
-    .setSize(37,37)
-    .setColorActive(color(150)) 
-    .setColorBackground(color(255,255,255,1))
-    .setColorForeground(color(0,0,0,30))
-    .setCaptionLabel("") 
-    ;
-	
-	cp5.addButton("NextToTeslaS")
-    .setPosition(316,23)
     .setSize(37,37)
     .setColorActive(color(150)) 
     .setColorBackground(color(255,255,255,1))
@@ -469,15 +436,15 @@ public void HomeBoton() {
 }
 
 public void BuyBoton() {
-	pantallas = 4;
+	pantallas = 5;
 }
 
 public void HistoryBoton() {
 	pantallas = 10;
 }
 
-public void BackToTeslaX() {
-	pantallas = 6;
+public void BackToMenu() {
+	pantallas = 3;
 }
 
 public void BackToTeslaS() {
@@ -486,17 +453,5 @@ public void BackToTeslaS() {
 
 public void BackToTeslaY() {
 	pantallas = 5;
-}
-
-public void NextToTeslaY() {
-	pantallas = 5;
-}
-
-public void NextToTeslaX() {
-	pantallas = 6;
-}
-
-public void NextToTeslaS() {
-	pantallas = 4;
 }
 }

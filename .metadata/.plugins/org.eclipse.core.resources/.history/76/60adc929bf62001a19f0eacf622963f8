@@ -132,7 +132,7 @@ public void draw() {
 		cp5.get(Button.class,"BuyBoton").show();
 		cp5.get(Button.class,"HistoryBoton").show();
 		cp5.get(Button.class,"BackToTeslaX").show();
-		cp5.get(Button.class,"NextToTeslaY").show();
+		cp5.get(Button.class,"NexToTeslaY").show();
 		
 		fill(0);
 		textSize(10);

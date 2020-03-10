@@ -124,57 +124,21 @@ public void draw() {
 		text("x: "+mouseX+"y: "+mouseY,mouseX,mouseY);
 		break;
 		
-    case 4:
-    	//Pantalla De Compras Tesla S
-    	image(TeslaS,0,0);
-    	
-    	cp5.get(Button.class,"HomeBoton").show();
-		cp5.get(Button.class,"BuyBoton").show();
-		cp5.get(Button.class,"HistoryBoton").show();
-		cp5.get(Button.class,"BackToTeslaX").show();
-		cp5.get(Button.class,"NextToTeslaY").show();
-		
-		fill(0);
-		textSize(10);
-		text("x: "+mouseX+"y: "+mouseY,mouseX,mouseY);
-		break;
-		
-    case 5:
-    	//Pantalla De Compras Tesla Y
-    	image(TeslaY,0,0);
-    	
-    	cp5.get(Button.class,"HomeBoton").show();
-		cp5.get(Button.class,"BuyBoton").show();
-		cp5.get(Button.class,"HistoryBoton").show();
-		cp5.get(Button.class,"BackToTeslaS").show();
-		cp5.get(Button.class,"NexToTeslaX").show();
-		
-		fill(0);
-		textSize(10);
-		text("x: "+mouseX+"y: "+mouseY,mouseX,mouseY);
-		break;
-		
-    case 6:
-    	//Pantalla De Compras Tesla X
-    	image(TeslaX,0,0);
-    	
-    	cp5.get(Button.class,"HomeBoton").show();
-		cp5.get(Button.class,"BuyBoton").show();
-		cp5.get(Button.class,"HistoryBoton").show();
-		cp5.get(Button.class,"BackToTeslaY").show();
-		cp5.get(Button.class,"NexToTeslaS").show();
-		
-		fill(0);
-		textSize(10);
-		text("x: "+mouseX+"y: "+mouseY,mouseX,mouseY);
-		break;
-		
-		
-    case 10:
+	case 4:
 		//Pantalla De Historia de compras
 		image(Historial,0,0);
 		
 		cp5.get(Button.class,"HomeBoton").show();
+		cp5.get(Button.class,"BuyBoton").show();
+		cp5.get(Button.class,"HistoryBoton").show();
+		break;
+		
+		
+    case 5:
+    	//Pantalla De Compras Tesla S
+    	image(TeslaS,0,0);
+    	
+    	cp5.get(Button.class,"HomeBoton").show();
 		cp5.get(Button.class,"BuyBoton").show();
 		cp5.get(Button.class,"HistoryBoton").show();
 		break;
@@ -208,12 +172,6 @@ private void ocultarBotones() {
 	cp5.get(Button.class,"HomeBoton").hide();
 	cp5.get(Button.class,"BuyBoton").hide();
 	cp5.get(Button.class,"HistoryBoton").hide();
-	cp5.get(Button.class,"BackToTeslaX").hide();
-	cp5.get(Button.class,"BackToTeslaS").hide();
-	cp5.get(Button.class,"BackToTeslaY").hide();
-	cp5.get(Button.class,"NextToTeslaY").hide();
-	cp5.get(Button.class,"NextToTeslaX").hide();
-	cp5.get(Button.class,"NextToTeslaS").hide();
 
 }
 
@@ -392,60 +350,6 @@ public void botones() {
     .setCaptionLabel("") 
     ;
 	
-	cp5.addButton("BackToTeslaX")
-    .setPosition(20,24)
-    .setSize(37,37)
-    .setColorActive(color(150)) 
-    .setColorBackground(color(255,255,255,1))
-    .setColorForeground(color(0,0,0,30))
-    .setCaptionLabel("") 
-    ;
-	
-	cp5.addButton("BackToTeslaS")
-    .setPosition(20,24)
-    .setSize(37,37)
-    .setColorActive(color(150)) 
-    .setColorBackground(color(255,255,255,1))
-    .setColorForeground(color(0,0,0,30))
-    .setCaptionLabel("") 
-    ;
-	
-	cp5.addButton("BackToTeslaY")
-    .setPosition(20,24)
-    .setSize(37,37)
-    .setColorActive(color(150)) 
-    .setColorBackground(color(255,255,255,1))
-    .setColorForeground(color(0,0,0,30))
-    .setCaptionLabel("") 
-    ;
-	
-	cp5.addButton("NextToTeslaY")
-    .setPosition(316,23)
-    .setSize(37,37)
-    .setColorActive(color(150)) 
-    .setColorBackground(color(255,255,255,1))
-    .setColorForeground(color(0,0,0,30))
-    .setCaptionLabel("") 
-    ;
-	
-	cp5.addButton("NextToTeslaX")
-    .setPosition(316,23)
-    .setSize(37,37)
-    .setColorActive(color(150)) 
-    .setColorBackground(color(255,255,255,1))
-    .setColorForeground(color(0,0,0,30))
-    .setCaptionLabel("") 
-    ;
-	
-	cp5.addButton("NextToTeslaS")
-    .setPosition(316,23)
-    .setSize(37,37)
-    .setColorActive(color(150)) 
-    .setColorBackground(color(255,255,255,1))
-    .setColorForeground(color(0,0,0,30))
-    .setCaptionLabel("") 
-    ;
-	
 }
 
 public void login() {
@@ -469,34 +373,11 @@ public void HomeBoton() {
 }
 
 public void BuyBoton() {
-	pantallas = 4;
+	pantallas = 5;
 }
 
 public void HistoryBoton() {
-	pantallas = 10;
-}
-
-public void BackToTeslaX() {
-	pantallas = 6;
-}
-
-public void BackToTeslaS() {
 	pantallas = 4;
 }
 
-public void BackToTeslaY() {
-	pantallas = 5;
-}
-
-public void NextToTeslaY() {
-	pantallas = 5;
-}
-
-public void NextToTeslaX() {
-	pantallas = 6;
-}
-
-public void NextToTeslaS() {
-	pantallas = 4;
-}
 }

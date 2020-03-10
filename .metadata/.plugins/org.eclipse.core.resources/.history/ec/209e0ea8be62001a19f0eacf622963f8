@@ -132,7 +132,6 @@ public void draw() {
 		cp5.get(Button.class,"BuyBoton").show();
 		cp5.get(Button.class,"HistoryBoton").show();
 		cp5.get(Button.class,"BackToTeslaX").show();
-		cp5.get(Button.class,"NextToTeslaY").show();
 		
 		fill(0);
 		textSize(10);
@@ -147,7 +146,6 @@ public void draw() {
 		cp5.get(Button.class,"BuyBoton").show();
 		cp5.get(Button.class,"HistoryBoton").show();
 		cp5.get(Button.class,"BackToTeslaS").show();
-		cp5.get(Button.class,"NexToTeslaX").show();
 		
 		fill(0);
 		textSize(10);
@@ -162,6 +160,8 @@ public void draw() {
 		cp5.get(Button.class,"BuyBoton").show();
 		cp5.get(Button.class,"HistoryBoton").show();
 		cp5.get(Button.class,"BackToTeslaY").show();
+		cp5.get(Button.class,"NexToTeslaY").show();
+		cp5.get(Button.class,"NexToTeslaX").show();
 		cp5.get(Button.class,"NexToTeslaS").show();
 		
 		fill(0);
