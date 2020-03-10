@@ -1,0 +1,29 @@
+!SESSION 2020-03-09 17:49:42.817 -----------------------------------------------
+eclipse.buildId=4.12.0.I20190605-1800
+java.version=1.8.0_221
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=es_CO
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/usuario/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -keyring /Users/usuario/.eclipse_keyring
+
+!ENTRY org.eclipse.core.net 1 0 2020-03-09 17:50:13.994
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.egit.core 1 0 2020-03-09 17:50:14.046
+!MESSAGE Using Apache MINA sshd as ssh client.
+!SESSION 2020-03-10 03:56:53.630 -----------------------------------------------
+eclipse.buildId=4.12.0.I20190605-1800
+java.version=1.8.0_221
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=es_CO
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/usuario/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -keyring /Users/usuario/.eclipse_keyring
+
+!ENTRY org.eclipse.core.resources 2 10035 2020-03-10 03:57:09.632
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.core.net 1 0 2020-03-10 03:57:13.000
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.egit.core 1 0 2020-03-10 03:57:13.063
+!MESSAGE Using Apache MINA sshd as ssh client.

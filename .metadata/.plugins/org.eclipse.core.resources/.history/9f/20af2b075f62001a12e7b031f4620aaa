@@ -1,0 +1,60 @@
+package main;
+import processing.core.PApplet;
+import processing.core.PImage;
+
+public class Main extends PApplet {
+	
+	PImage Compra;
+	PImage Historial;
+	PImage Home;
+	PImage Inicio;
+	PImage LogIn;
+	PImage NewAccount;
+	PImage Pay;
+	PImage TeslaS;
+	PImage TeslaSAudi;
+	PImage TeslaX;
+	PImage TeslaXAudi;
+	PImage TeslaY;
+	PImage TeslaYAudi;
+
+	public static void main(String[] args) {
+		
+      PApplet.main("main.Main");
+	}
+	
+
+	
+public void settings() {
+	size(375,812);	
+
+	}
+
+public void setup() {
+	
+	background(0);	
+	Compra = loadImage("imagenes/Compra.png");
+	Historial = loadImage("imagenes/Historial.png");
+	Home = loadImage("imagenes/Home.png");
+	Inicio = loadImage("imagenes/Inicio.png");
+	LogIn = loadImage("imagenes/LogIn.png");
+	NewAccount = loadImage("imagenes/NewAccount.png");
+    Pay = loadImage("imagenes/Pay.png");
+	TeslaS = loadImage("imagenes/TeslaS.png");
+	TeslaSAudi = loadImage("imagenes/TeslaSAudi.png");
+	TeslaX = loadImage("imagenes/TeslaX.png");
+	TeslaXAudi = loadImage("imagenes/TeslaXAudi.png");
+	TeslaY = loadImage("imagenes/TeslaY.png");
+	TeslaYAudi = loadImage("imagenes/TeslaYAudi.png");
+}
+
+
+public void draw() {
+	image(Compra,0,0);
+}
+
+
+
+
+
+}
