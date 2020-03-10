@@ -178,8 +178,7 @@ public void draw() {
     case 7:
     	//Pay My Car
     	image(Pay,0,0);
-    	cp5.get(Button.class,"BackToTeslaS").show();
-    	cp5.get(Button.class,"PayCar").show();
+    	
     
 		
 		fill(0);
@@ -190,7 +189,7 @@ public void draw() {
     case 8:
     	//Comparacion entre Audi y tesla S
     	image(TeslaSAudi,0,0);
-    	cp5.get(Button.class,"BackToTeslaS").show();
+    	
     		
 		fill(0);
 		textSize(10);
@@ -200,7 +199,7 @@ public void draw() {
     case 9:
     	//Comparacion entre Audi y tesla Y
     	image(TeslaYAudi,0,0);
-    	cp5.get(Button.class,"BackToTeslaY").show();
+    
     	
 		fill(0);
 		textSize(10);
@@ -211,17 +210,7 @@ public void draw() {
     case 11:
     	//Comparacion entre Audi y tesla X
     	image(TeslaXAudi,0,0);
-    	cp5.get(Button.class,"BackToTeslaX").show();
-    		
-		fill(0);
-		textSize(10);
-		text("x: "+mouseX+"y: "+mouseY,mouseX,mouseY);
-		break;
-		
-    case 12:
-    	//Gracias por su compra
-    	image(Compra,0,0);
-    	cp5.get(Button.class,"BackToTeslaS").show();
+    
     		
 		fill(0);
 		textSize(10);
@@ -278,7 +267,6 @@ private void ocultarBotones() {
 	cp5.get(Button.class,"TeslaSAudi").hide();
 	cp5.get(Button.class,"TeslaYAudi").hide();
 	cp5.get(Button.class,"TeslaXAudi").hide();
-	cp5.get(Button.class,"PayCar").hide();
 
 }
 
@@ -547,35 +535,6 @@ public void botones() {
     .setCaptionLabel("") 
     ;
 	
-	cp5.addButton("PayCar")
-    .setPosition(41,595)
-    .setSize(288,43)
-    .setColorActive(color(150)) 
-    .setColorBackground(color(255,255,255,1))
-    .setColorForeground(color(0,0,0,30))
-    .setCaptionLabel("") 
-    ;
-	
-	cp5.addButton("BuyAnother")
-    .setPosition(33,589)
-    .setSize(146,57)
-    .setColorActive(color(150)) 
-    .setColorBackground(color(255,255,255,1))
-    .setColorForeground(color(0,0,0,30))
-    .setCaptionLabel("") 
-    ;
-	
-	cp5.addButton("Close")
-    .setPosition(197,589)
-    .setSize(146,57)
-    .setColorActive(color(150)) 
-    .setColorBackground(color(255,255,255,1))
-    .setColorForeground(color(0,0,0,30))
-    .setCaptionLabel("") 
-    ;
-	
-	
-	
 }
 
 public void login() {
@@ -648,13 +607,6 @@ public void TeslaXAudi() {
 	pantallas = 11;
 	
 }
-
-public void PayCar() {
-	pantallas = 12;
-	
-}
-
-
 
 
 }

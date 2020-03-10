@@ -221,7 +221,7 @@ public void draw() {
     case 12:
     	//Gracias por su compra
     	image(Compra,0,0);
-    	cp5.get(Button.class,"BackToTeslaS").show();
+    	
     		
 		fill(0);
 		textSize(10);
@@ -555,26 +555,6 @@ public void botones() {
     .setColorForeground(color(0,0,0,30))
     .setCaptionLabel("") 
     ;
-	
-	cp5.addButton("BuyAnother")
-    .setPosition(33,589)
-    .setSize(146,57)
-    .setColorActive(color(150)) 
-    .setColorBackground(color(255,255,255,1))
-    .setColorForeground(color(0,0,0,30))
-    .setCaptionLabel("") 
-    ;
-	
-	cp5.addButton("Close")
-    .setPosition(197,589)
-    .setSize(146,57)
-    .setColorActive(color(150)) 
-    .setColorBackground(color(255,255,255,1))
-    .setColorForeground(color(0,0,0,30))
-    .setCaptionLabel("") 
-    ;
-	
-	
 	
 }
 
