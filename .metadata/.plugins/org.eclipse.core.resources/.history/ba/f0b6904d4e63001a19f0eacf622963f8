@@ -90,13 +90,6 @@ public void draw() {
 		cp5.get(Textfield.class,"Phone").setVisible(true);
 		cp5.get(Textfield.class,"Email").setVisible(true);
 		cp5.get(Textfield.class,"Password").setVisible(true);
-		
-		cp5.get(Textfield.class,"CardNumber").setVisible(false);
-		cp5.get(Textfield.class,"Country").setVisible(false);
-		cp5.get(Textfield.class,"HomeAdress").setVisible(false);
-		cp5.get(Textfield.class,"ExpDate").setVisible(false);
-		cp5.get(Textfield.class,"CardPassword").setVisible(false);
-		cp5.get(Textfield.class,"Bank").setVisible(false);
 
 		fill(0);
 		textSize(10);
@@ -116,13 +109,6 @@ public void draw() {
 		cp5.get(Button.class,"StartLogIn").show();
 		cp5.get(Textfield.class,"EmailLogIn").setVisible(true);
 		cp5.get(Textfield.class,"PasswordLogIn").setVisible(true);
-		
-		cp5.get(Textfield.class,"CardNumber").setVisible(false);
-		cp5.get(Textfield.class,"Country").setVisible(false);
-		cp5.get(Textfield.class,"HomeAdress").setVisible(false);
-		cp5.get(Textfield.class,"ExpDate").setVisible(false);
-		cp5.get(Textfield.class,"CardPassword").setVisible(false);
-		cp5.get(Textfield.class,"Bank").setVisible(false);
 		
 		
 		fill(0);
@@ -148,8 +134,7 @@ public void draw() {
     case 4:
     	//Pantalla De Compras Tesla S
     	image(TeslaS,0,0);
-    	ocultarBotones();
-    	ocultarCamposDeTexto();
+    	
     	cp5.get(Button.class,"HomeBoton").show();
 		cp5.get(Button.class,"BuyBoton").show();
 		cp5.get(Button.class,"HistoryBoton").show();
@@ -166,8 +151,7 @@ public void draw() {
     case 5:
     	//Pantalla De Compras Tesla Y
     	image(TeslaY,0,0);
-    	ocultarBotones();
-    	ocultarCamposDeTexto();
+    	
     	cp5.get(Button.class,"HomeBoton").show();
 		cp5.get(Button.class,"BuyBoton").show();
 		cp5.get(Button.class,"HistoryBoton").show();
@@ -184,8 +168,7 @@ public void draw() {
     case 6:
     	//Pantalla De Compras Tesla X
     	image(TeslaX,0,0);
-    	ocultarBotones();
-    	ocultarCamposDeTexto();
+    	
     	cp5.get(Button.class,"HomeBoton").show();
 		cp5.get(Button.class,"BuyBoton").show();
 		cp5.get(Button.class,"HistoryBoton").show();
@@ -203,14 +186,6 @@ public void draw() {
     	//Pay My Car
     	image(Pay,0,0);
     	ocultarBotones();
-    	
-    	cp5.get(Textfield.class,"CardNumber").setVisible(true);
-    	cp5.get(Textfield.class,"Country").setVisible(true);
-    	cp5.get(Textfield.class,"HomeAdress").setVisible(true);
-    	cp5.get(Textfield.class,"ExpDate").setVisible(true);
-    	cp5.get(Textfield.class,"CardPassword").setVisible(true);
-    	cp5.get(Textfield.class,"Bank").setVisible(true);
-    	
     	cp5.get(Button.class,"BackToTeslaS").show();
     	cp5.get(Button.class,"PayCar").show();
     
@@ -223,8 +198,6 @@ public void draw() {
     case 8:
     	//Comparacion entre Audi y tesla S
     	image(TeslaSAudi,0,0);
-    	ocultarBotones();
-    	ocultarCamposDeTexto();
     	cp5.get(Button.class,"BackToTeslaS").show();
     		
 		fill(0);
@@ -235,8 +208,6 @@ public void draw() {
     case 9:
     	//Comparacion entre Audi y tesla Y
     	image(TeslaYAudi,0,0);
-    	ocultarBotones();
-    	ocultarCamposDeTexto();
     	cp5.get(Button.class,"BackToTeslaY").show();
     	
 		fill(0);
@@ -248,8 +219,6 @@ public void draw() {
     case 11:
     	//Comparacion entre Audi y tesla X
     	image(TeslaXAudi,0,0);
-    	ocultarBotones();
-    	ocultarCamposDeTexto();
     	cp5.get(Button.class,"BackToTeslaX").show();
     		
 		fill(0);
@@ -261,7 +230,6 @@ public void draw() {
     	//Gracias por su compra
     	image(Compra,0,0);
     	ocultarBotones();
-    	ocultarCamposDeTexto();
     	cp5.get(Button.class,"BackToTeslaS").show();
     	cp5.get(Button.class,"Close").show();
     	cp5.get(Button.class,"BuyAnother").show();
@@ -277,8 +245,7 @@ public void draw() {
     case 10:
 		//Pantalla De Historia de compras
 		image(Historial,0,0);
-		ocultarBotones();
-		ocultarCamposDeTexto();
+		
 		cp5.get(Button.class,"HomeBoton").show();
 		cp5.get(Button.class,"BuyBoton").show();
 		cp5.get(Button.class,"HistoryBoton").show();
@@ -292,6 +259,10 @@ public void draw() {
 	
 }
 
+public void mouseClicked() {
+	
+	
+}
 
 private void ocultarCamposDeTexto() {
 
@@ -303,12 +274,6 @@ private void ocultarCamposDeTexto() {
 	cp5.get(Textfield.class,"Password").setVisible(false);
 	cp5.get(Textfield.class,"EmailLogIn").setVisible(false);
 	cp5.get(Textfield.class,"PasswordLogIn").setVisible(false);
-	cp5.get(Textfield.class,"CardNumber").setVisible(false);
-	cp5.get(Textfield.class,"Country").setVisible(false);
-	cp5.get(Textfield.class,"HomeAdress").setVisible(false);
-	cp5.get(Textfield.class,"ExpDate").setVisible(false);
-	cp5.get(Textfield.class,"CardPassword").setVisible(false);
-	cp5.get(Textfield.class,"Bank").setVisible(false);
 }
 
 private void ocultarBotones() {
@@ -434,78 +399,6 @@ cp5.addTextfield("EmailLogIn")
 cp5.addTextfield("PasswordLogIn")
 .setPosition(117,338)
 .setSize(222,27)
-.setFocus(true)
-//.setFont(font)
-.setColor(100)
-.setColorBackground(color(255,255,255,1))
-.setColorActive(color(255,255,255,1)) 
-.removeBehavior() 
-.setLabelVisible(false)
-.setCaptionLabel("");
-
-cp5.addTextfield("CardNumber")
-.setPosition(138,208)
-.setSize(187,26)
-.setFocus(true)
-//.setFont(font)
-.setColor(100)
-.setColorBackground(color(255,255,255,1))
-.setColorActive(color(255,255,255,1)) 
-.removeBehavior() 
-.setLabelVisible(false)
-.setCaptionLabel("");
-
-cp5.addTextfield("Country")
-.setPosition(138,464)
-.setSize(187,26)
-.setFocus(true)
-//.setFont(font)
-.setColor(100)
-.setColorBackground(color(255,255,255,1))
-.setColorActive(color(255,255,255,1)) 
-.removeBehavior() 
-.setLabelVisible(false)
-.setCaptionLabel("");
-
-cp5.addTextfield("HomeAdress")
-.setPosition(138,526)
-.setSize(187,26)
-.setFocus(true)
-//.setFont(font)
-.setColor(100)
-.setColorBackground(color(255,255,255,1))
-.setColorActive(color(255,255,255,1)) 
-.removeBehavior() 
-.setLabelVisible(false)
-.setCaptionLabel("");
-
-cp5.addTextfield("ExpDate")
-.setPosition(116,273)
-.setSize(209,26)
-.setFocus(true)
-//.setFont(font)
-.setColor(100)
-.setColorBackground(color(255,255,255,1))
-.setColorActive(color(255,255,255,1)) 
-.removeBehavior() 
-.setLabelVisible(false)
-.setCaptionLabel("");
-
-cp5.addTextfield("CardPassword")
-.setPosition(116,399)
-.setSize(209,26)
-.setFocus(true)
-//.setFont(font)
-.setColor(100)
-.setColorBackground(color(255,255,255,1))
-.setColorActive(color(255,255,255,1)) 
-.removeBehavior() 
-.setLabelVisible(false)
-.setCaptionLabel("");
-
-cp5.addTextfield("Bank")
-.setPosition(84,338)
-.setSize(241,26)
 .setFocus(true)
 //.setFont(font)
 .setColor(100)

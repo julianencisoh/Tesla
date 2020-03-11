@@ -203,6 +203,8 @@ public void draw() {
     	//Pay My Car
     	image(Pay,0,0);
     	ocultarBotones();
+    	ocultarCamposDeTexto();
+    	
     	
     	cp5.get(Textfield.class,"CardNumber").setVisible(true);
     	cp5.get(Textfield.class,"Country").setVisible(true);

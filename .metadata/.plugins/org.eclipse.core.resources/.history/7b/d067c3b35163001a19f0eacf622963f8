@@ -203,14 +203,7 @@ public void draw() {
     	//Pay My Car
     	image(Pay,0,0);
     	ocultarBotones();
-    	
-    	cp5.get(Textfield.class,"CardNumber").setVisible(true);
-    	cp5.get(Textfield.class,"Country").setVisible(true);
-    	cp5.get(Textfield.class,"HomeAdress").setVisible(true);
-    	cp5.get(Textfield.class,"ExpDate").setVisible(true);
-    	cp5.get(Textfield.class,"CardPassword").setVisible(true);
-    	cp5.get(Textfield.class,"Bank").setVisible(true);
-    	
+    	ocultarCamposDeTexto();
     	cp5.get(Button.class,"BackToTeslaS").show();
     	cp5.get(Button.class,"PayCar").show();
     
