@@ -84,7 +84,6 @@ public void draw() {
 		ocultarBotones();
 		
 		cp5.get(Button.class,"StartNewAccount").show();
-		cp5.get(Button.class,"BackToStart").show();
 		cp5.get(Textfield.class,"Name").setVisible(true);
 		cp5.get(Textfield.class,"Age").setVisible(true);
 		cp5.get(Textfield.class,"Id").setVisible(true);;
@@ -113,8 +112,8 @@ public void draw() {
 		
 		cp5.get(Button.class,"login").hide();
 		cp5.get(Button.class,"createNewAccount").hide();
+		
 		cp5.get(Button.class,"StartLogIn").show();
-		cp5.get(Button.class,"BackToStart").show();
 		cp5.get(Textfield.class,"EmailLogIn").setVisible(true);
 		cp5.get(Textfield.class,"PasswordLogIn").setVisible(true);
 		
@@ -333,8 +332,6 @@ private void ocultarBotones() {
 	cp5.get(Button.class,"PayCar").hide();
 	cp5.get(Button.class,"Close").hide();
 	cp5.get(Button.class,"BuyAnother").hide();
-	cp5.get(Button.class,"BackToStart").hide();
-
 
 }
 
@@ -502,7 +499,6 @@ cp5.addTextfield("CardPassword")
 .setFocus(true)
 //.setFont(font)
 .setColor(100)
-.setPasswordMode(true)
 .setColorBackground(color(255,255,255,1))
 .setColorActive(color(255,255,255,1)) 
 .removeBehavior() 
@@ -705,14 +701,6 @@ public void botones() {
     .setCaptionLabel("") 
     ;
 	
-	cp5.addButton("BackToStart")
-	.setPosition(20,24)
-    .setSize(37,37)
-    .setColorActive(color(150)) 
-    .setColorBackground(color(255,255,255,1))
-    .setColorForeground(color(0,0,0,30))
-    .setCaptionLabel("") 
-    ;
 	
 	
 }
@@ -802,8 +790,6 @@ public void BuyAnother() {
 	pantallas = 3;
 	
 }
-public void BackToStart() {
-	pantallas=0;
-}
+
 
 }
