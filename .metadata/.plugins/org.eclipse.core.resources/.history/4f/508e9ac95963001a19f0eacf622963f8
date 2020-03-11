@@ -733,7 +733,6 @@ public void botones() {
 
 public void login() {
 	pantallas=2;
-	entrar();
 }
 
 public void createNewAccount() {
@@ -746,7 +745,6 @@ public void StartLogIn() {
 
 public void StartNewAccount() {
 	pantallas=3;
-	registro();
 }
 
 public void HomeBoton() {
@@ -843,6 +841,8 @@ public void entrar() {
 	
 		correoclienteUno = clientes.get(i).getCorreoElectronico();
 		contraClienteUno=clientes.get(i).getContrasenia();
+		
+		
 	
 	if(cp5.get(Textfield.class, "Email").getText().equals(correoclienteUno) && cp5.get(Textfield.class, "Password").getText().equals(contraClienteUno)) {
 		pantallas=3;

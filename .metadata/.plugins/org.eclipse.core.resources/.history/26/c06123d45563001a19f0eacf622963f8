@@ -1,7 +1,6 @@
 package main;
 import processing.core.PApplet;
 import processing.core.PImage;
-import java.util.ArrayList;
 import controlP5.*;
 
 public class Main extends PApplet {
@@ -21,13 +20,6 @@ public class Main extends PApplet {
 	PImage TeslaY;
 	PImage TeslaYAudi;
 	ControlP5 cp5;
-	String correoclienteUno;
-	String contraClienteUno;
-	
-	ArrayList<Clientes> clientes;
-	String [] usuarios;
-	String correoElectronico;
-	String contrasenia;
 
 	public static void main(String[] args) {
 		
@@ -59,12 +51,6 @@ public void setup() {
 	TeslaXAudi = loadImage("imagenes/TeslaXAudi.png");
 	TeslaY = loadImage("imagenes/TeslaY.png");
 	TeslaYAudi = loadImage("imagenes/TeslaYAudi.png");
-	
-	usuarios = new String [2];
-	
-	usuarios[0] = "correo";
-	usuarios[1] = "contrasena";
-
 	
 	camposDeTexto();
 	botones();
@@ -733,7 +719,6 @@ public void botones() {
 
 public void login() {
 	pantallas=2;
-	entrar();
 }
 
 public void createNewAccount() {
@@ -746,7 +731,6 @@ public void StartLogIn() {
 
 public void StartNewAccount() {
 	pantallas=3;
-	registro();
 }
 
 public void HomeBoton() {
@@ -822,31 +806,24 @@ public void BackToStart() {
 	pantallas=0;
 }
 
-
+/*
 public void registro() {
-
-	correoElectronico = cp5.get(Textfield.class, "Email").getText();
-	usuarios[0] = correoElectronico;
-	contrasenia = cp5.get(Textfield.class, "Password").getText();
-	usuarios[1] = contrasenia;
+	System.out.println("entro");
+	naming = cp5.get(Textfield.class, "nombre").getText();
+	usuario[0] = naming;
+	username = cp5.get(Textfield.class, "usuario2").getText();
+	usuario[1] = username ;
+	correo = cp5.get(Textfield.class, "email").getText();
+	usuario[2] = correo;
+	contrasena = cp5.get(Textfield.class, "password2").getText();
+	usuario[3] = contrasena;
+	
+	people.add(new Usuario(naming,username,correo,contrasena));
 	
 	
-	clientes.add(new Clientes(correoElectronico, contrasenia));
+	System.out.println(naming+username+correo+contrasena);
+	pantallas = 2;
 
-
-}
-
-
-public void entrar() {
-	
-	for (int i=0; i<clientes.size();i++) {
-	
-		correoclienteUno = clientes.get(i).getCorreoElectronico();
-		contraClienteUno=clientes.get(i).getContrasenia();
-	
-	if(cp5.get(Textfield.class, "Email").getText().equals(correoclienteUno) && cp5.get(Textfield.class, "Password").getText().equals(contraClienteUno)) {
-		pantallas=3;
-	}}
-}
+}*/
 	 
 }

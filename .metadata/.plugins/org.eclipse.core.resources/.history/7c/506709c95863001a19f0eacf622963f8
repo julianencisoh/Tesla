@@ -1,7 +1,6 @@
 package main;
 import processing.core.PApplet;
 import processing.core.PImage;
-import java.util.ArrayList;
 import controlP5.*;
 
 public class Main extends PApplet {
@@ -21,13 +20,10 @@ public class Main extends PApplet {
 	PImage TeslaY;
 	PImage TeslaYAudi;
 	ControlP5 cp5;
-	String correoclienteUno;
-	String contraClienteUno;
 	
-	ArrayList<Clientes> clientes;
 	String [] usuarios;
-	String correoElectronico;
-	String contrasenia;
+	String CorreoElectronico;
+	String Contrasenia;
 
 	public static void main(String[] args) {
 		
@@ -733,7 +729,6 @@ public void botones() {
 
 public void login() {
 	pantallas=2;
-	entrar();
 }
 
 public void createNewAccount() {
@@ -746,7 +741,6 @@ public void StartLogIn() {
 
 public void StartNewAccount() {
 	pantallas=3;
-	registro();
 }
 
 public void HomeBoton() {
@@ -822,7 +816,7 @@ public void BackToStart() {
 	pantallas=0;
 }
 
-
+/*
 public void registro() {
 
 	correoElectronico = cp5.get(Textfield.class, "Email").getText();
@@ -831,22 +825,12 @@ public void registro() {
 	usuarios[1] = contrasenia;
 	
 	
-	clientes.add(new Clientes(correoElectronico, contrasenia));
-
-
-}
-
-
-public void entrar() {
+	people.add(new Usuario(naming,username,correo,contrasena));
 	
-	for (int i=0; i<clientes.size();i++) {
 	
-		correoclienteUno = clientes.get(i).getCorreoElectronico();
-		contraClienteUno=clientes.get(i).getContrasenia();
-	
-	if(cp5.get(Textfield.class, "Email").getText().equals(correoclienteUno) && cp5.get(Textfield.class, "Password").getText().equals(contraClienteUno)) {
-		pantallas=3;
-	}}
-}
+	System.out.println(naming+username+correo+contrasena);
+	pantallas = 2;
+
+}*/
 	 
 }

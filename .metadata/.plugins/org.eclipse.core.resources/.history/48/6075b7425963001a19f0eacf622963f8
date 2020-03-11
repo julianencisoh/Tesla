@@ -21,8 +21,8 @@ public class Main extends PApplet {
 	PImage TeslaY;
 	PImage TeslaYAudi;
 	ControlP5 cp5;
-	String correoclienteUno;
-	String contraClienteUno;
+	String CorreoclienteUno;
+	String ContraClienteUno;
 	
 	ArrayList<Clientes> clientes;
 	String [] usuarios;
@@ -733,7 +733,6 @@ public void botones() {
 
 public void login() {
 	pantallas=2;
-	entrar();
 }
 
 public void createNewAccount() {
@@ -746,7 +745,6 @@ public void StartLogIn() {
 
 public void StartNewAccount() {
 	pantallas=3;
-	registro();
 }
 
 public void HomeBoton() {
@@ -836,17 +834,20 @@ public void registro() {
 
 }
 
-
+/*
 public void entrar() {
 	
 	for (int i=0; i<clientes.size();i++) {
 	
-		correoclienteUno = clientes.get(i).getCorreoElectronico();
-		contraClienteUno=clientes.get(i).getContrasenia();
-	
-	if(cp5.get(Textfield.class, "Email").getText().equals(correoclienteUno) && cp5.get(Textfield.class, "Password").getText().equals(contraClienteUno)) {
-		pantallas=3;
+		CorreoclienteUno = clientes.get(i).getCorreoElectronico();
+		ContraClienteUno=clientes.get(i).getContrasenia();
+		
+		
+	// aquí evaluamos si el usuario es el mismo del registro y coincide con su password
+	if(cp5.get(Textfield.class, "usuario").getText().equals(usuarioeva) && cp5.get(Textfield.class, "password").getText().equals(passeva)) {
+		pantallas=4;
+		System.out.println("entro");
 	}}
-}
+}*/
 	 
 }
