@@ -733,7 +733,7 @@ public void botones() {
 
 public void login() {
 	pantallas=2;
-	//entrar();
+	entrar();
 }
 
 public void createNewAccount() {
